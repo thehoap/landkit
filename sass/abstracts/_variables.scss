@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "HKGroteskPro";
+    src: url("/font/HKGroteskPro-Regular.woff2") format("woff2"),
+        url("/font/HKGroteskPro-Medium.woff") format("woff2");
+}
+
+$fontFamily: "HKGroteskPro", serif;

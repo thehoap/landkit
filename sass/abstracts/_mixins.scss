@@ -1,0 +1,15 @@
+@mixin flexCenter() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin transition($property) {
+    transition: $property 0.2s linear;
+}
+@mixin positionAbsolute($top: null, $right: null, $bottom: null, $left: null) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
