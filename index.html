@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
         <title>Landkit Clone</title>
         <link rel="stylesheet" href="./sass/app.css" />
     </head>
@@ -18,59 +19,304 @@
                     />
                 </a>
                 <nav class="nav">
-                    <ul class="menu">
-                        <li class="menu__item">
+                    <ul class="nav-main">
+                        <li class="nav-main__item nav-main__item--gradient">
                             Landings
-                            <div class="submenu">
-                                <div class="submenu__img">
-                                    <h3 class="submenu__heading">
+                            <div class="nav-sub">
+                                <div
+                                    class="nav-sub__item"
+                                >
+                                    <h3
+                                        class="nav-sub__heading"
+                                    >
                                         Want to see an overview?
                                     </h3>
-                                    <p class="submenu__description">
+                                    <p
+                                        class="nav-sub__description"
+                                    >
                                         See all the pages at once
                                     </p>
-                                    <div class="submenu__btn btn btn--primary">
+                                    <div class="nav-sub__btn btn btn--primary">
                                         View all pages
                                     </div>
                                 </div>
-                                <div class="submenu__list">
+                                <ul class="nav-sub__item">
                                     <ul>
-                                        <h3 class="sublist__heading">
-                                            SERVICES
+                                        <h3 class="nav-sub__heading">
+                                            Services
                                         </h3>
                                         <li>Coworking</li>
                                         <li>Rental</li>
                                         <li>Job Listing</li>
                                     </ul>
                                     <ul>
-                                        <h3 class="sublist__heading">APPS</h3>
+                                        <h3 class="nav-sub__heading">Apps</h3>
                                         <li>Desktop</li>
                                         <li>Mobile</li>
                                     </ul>
+                                </ul>
+                                <ul class="nav-sub__item">
+                                    <h3 class="nav-sub__heading">Web</h3>
+                                    <li>Basic</li>
+                                    <li>Startup</li>
+                                    <li>Enterprise</li>
+                                    <li>Service</li>
+                                    <li>Cloud Hosting</li>
+                                    <li>Agency</li>
+                                    <li>Framework (NEW)</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-main__item">
+                            Pages
+                            <div class="nav-sub">
+                                <ul class="nav-sub__item">
                                     <ul>
-                                        <h3 class="sublist__heading">WEB</h3>
+                                        <h3 class="nav-sub__heading">Career</h3>
+                                        <li>Listing</li>
+                                        <li>Opening</li>
+                                    </ul>
+                                    <ul>
+                                        <h3 class="nav-sub__heading">
+                                            Company
+                                        </h3>
+                                        <li>About</li>
+                                        <li>Pricing</li>
+                                        <li>Terms</li>
+                                    </ul>
+                                </ul>
+                                <ul class="nav-sub__item">
+                                    <ul>
+                                        <h3 class="nav-sub__heading">
+                                            Help Center
+                                        </h3>
+                                        <li>Overview</li>
+                                        <li>Article</li>
+                                    </ul>
+                                    <ul>
+                                        <h3 class="nav-sub__heading">
+                                            Contact
+                                        </h3>
                                         <li>Basic</li>
-                                        <li>Startup</li>
-                                        <li>Enterprise</li>
-                                        <li>Service</li>
-                                        <li>Cloud Hosting</li>
-                                        <li>Agency</li>
-                                        <li>Framework (NEW)</li>
+                                        <li>Cover</li>
+                                    </ul>
+                                </ul>
+                                <ul class="nav-sub__item">
+                                    <h3 class="nav-sub__heading">Blog</h3>
+                                    <li>Rich</li>
+                                    <li>View</li>
+                                    <li>Article</li>
+                                    <li>Showcase</li>
+                                    <li>Search</li>
+                                </ul>
+                                <ul class="nav-sub__item">
+                                    <h3 class="nav-sub__heading">Portfolio</h3>
+                                    <li>Masonry</li>
+                                    <li>Grid Rows</li>
+                                    <li>Parallax</li>
+                                    <li>Case Study</li>
+                                    <li>Search</li>
+                                    <li>Sidebar: Fluid</li>
+                                    <li>Basic Grid</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-main__item nav-main__item--multi">
+                            Account
+                            <div class="nav-sub">
+                                <div class="nav-sub__item">
+                                    <h3 class="nav-sub__heading">
+                                        Settings
+                                        <ion-icon
+                                            name="chevron-forward"
+                                        ></ion-icon>
+                                    </h3>
+                                    <ul>
+                                        <li>General</li>
+                                        <li>Security</li>
+                                        <li>Notifications</li>
+                                        <li>Plans & Payment</li>
+                                        <li>Users</li>
+                                    </ul>
+                                </div>
+                                <div class="nav-sub__item">
+                                    <h3 class="nav-sub__heading">
+                                        Sign In
+                                        <ion-icon
+                                            name="chevron-forward"
+                                        ></ion-icon>
+                                    </h3>
+                                    <ul>
+                                        <li>Side Cover</li>
+                                        <li>Illustration</li>
+                                        <li>Basic</li>
+                                        <li>Modal Horizontal</li>
+                                        <li>Modal Vertical</li>
+                                    </ul>
+                                </div>
+                                <div class="nav-sub__item">
+                                    <h3 class="nav-sub__heading">
+                                        Sign Up
+                                        <ion-icon
+                                            name="chevron-forward"
+                                        ></ion-icon>
+                                    </h3>
+                                    <ul>
+                                        <li>Side Cover</li>
+                                        <li>Illustration</li>
+                                        <li>Basic</li>
+                                        <li>Modal Horizontal</li>
+                                        <li>Modal Vertical</li>
+                                    </ul>
+                                </div>
+                                <div class="nav-sub__item">
+                                    <h3 class="nav-sub__heading">
+                                        Password Reset
+                                        <ion-icon
+                                            name="chevron-forward"
+                                        ></ion-icon>
+                                    </h3>
+                                    <ul>
+                                        <li>Side Cover</li>
+                                        <li>Illustration</li>
+                                        <li>Basic</li>
+                                    </ul>
+                                </div>
+                                <div class="nav-sub__item">
+                                    <h3 class="nav-sub__heading">
+                                        Error
+                                        <ion-icon
+                                            name="chevron-forward"
+                                        ></ion-icon>
+                                    </h3>
+                                    <ul>
+                                        <li>Side Cover</li>
+                                        <li>Illustration</li>
+                                        <li>Basic</li>
                                     </ul>
                                 </div>
                             </div>
                         </li>
-                        <li class="menu__item">
-                            Pages
-                            <div class="submenu">Pages</div>
-                        </li>
-                        <li class="menu__item">
-                            Account
-                            <div class="submenu">Account</div>
-                        </li>
-                        <li class="menu__item">
+                        <li class="nav-main__item nav-main__item--iconic">
                             Document
-                            <div class="submenu">Document</div>
+                            <div class="nav-sub">
+                                <ul class="nav-sub__item">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h24v24H0z"></path>
+                                            <path
+                                                d="M8 3v.5A1.5 1.5 0 009.5 5h5A1.5 1.5 0 0016 3.5V3h2a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h2z"
+                                                fill="#335EEA"
+                                                opacity=".3"
+                                            ></path>
+                                            <path
+                                                d="M11 2a1 1 0 012 0h1.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11z"
+                                                fill="#335EEA"
+                                            ></path>
+                                            <rect
+                                                fill="#335EEA"
+                                                opacity=".3"
+                                                x="7"
+                                                y="10"
+                                                width="5"
+                                                height="2"
+                                                rx="1"
+                                            ></rect>
+                                            <rect
+                                                fill="#335EEA"
+                                                opacity=".3"
+                                                x="7"
+                                                y="14"
+                                                width="9"
+                                                height="2"
+                                                rx="1"
+                                            ></rect>
+                                        </g>
+                                    </svg>
+                                    <div>
+                                        <h3 class="nav-sub__heading">
+                                            Documentation
+                                        </h3>
+                                        <p class="nav-sub__description">
+                                            Customizing and building
+                                        </p>
+                                    </div>
+                                </ul>
+                                <ul class="nav-sub__item">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h24v24H0z"></path>
+                                            <rect
+                                                fill="#335EEA"
+                                                x="4"
+                                                y="4"
+                                                width="7"
+                                                height="7"
+                                                rx="1.5"
+                                            ></rect>
+                                            <path
+                                                d="M5.5 13h4a1.5 1.5 0 011.5 1.5v4A1.5 1.5 0 019.5 20h-4A1.5 1.5 0 014 18.5v-4A1.5 1.5 0 015.5 13zm9-9h4A1.5 1.5 0 0120 5.5v4a1.5 1.5 0 01-1.5 1.5h-4A1.5 1.5 0 0113 9.5v-4A1.5 1.5 0 0114.5 4zm0 9h4a1.5 1.5 0 011.5 1.5v4a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-4a1.5 1.5 0 011.5-1.5z"
+                                                fill="#335EEA"
+                                                opacity=".3"
+                                            ></path>
+                                        </g>
+                                    </svg>
+                                    <div>
+                                        <h3 class="nav-sub__heading">
+                                            Components
+                                        </h3>
+                                        <p class="nav-sub__description">
+                                            Full list of components
+                                        </p>
+                                    </div>
+                                </ul>
+                                <ul class="nav-sub__item">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h24v24H0z"></path>
+                                            <path
+                                                d="M5.857 2h7.88a1.5 1.5 0 01.968.355l4.764 4.029A1.5 1.5 0 0120 7.529v12.554c0 1.79-.02 1.917-1.857 1.917H5.857C4.02 22 4 21.874 4 20.083V3.917C4 2.127 4.02 2 5.857 2z"
+                                                fill="#335EEA"
+                                                opacity=".3"
+                                            ></path>
+                                            <rect
+                                                fill="#335EEA"
+                                                x="6"
+                                                y="11"
+                                                width="9"
+                                                height="2"
+                                                rx="1"
+                                            ></rect>
+                                            <rect
+                                                fill="#335EEA"
+                                                x="6"
+                                                y="15"
+                                                width="5"
+                                                height="2"
+                                                rx="1"
+                                            ></rect>
+                                        </g>
+                                    </svg>
+                                    <div>
+                                        <h3 class="nav-sub__heading">
+                                            Changelog
+                                        </h3>
+                                        <p class="nav-sub__description">
+                                            Keep track of changes
+                                        </p>
+                                    </div>
+                                    <span>2.1.0</span>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -78,5 +324,13 @@
             </header>
         </div>
         <script src="app.js"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
     </body>
 </html>
