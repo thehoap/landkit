@@ -1,3 +1,9 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+:root {
+    font-size: 62.5%;
+}
 html,
 body,
 div,
@@ -99,7 +105,7 @@ section {
 }
 body {
     line-height: 1;
-    font-size: 62.5%;
+    font-family: $fontFamily;
 }
 ol,
 ul {
@@ -119,4 +125,45 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+a {
+    text-decoration: none;
+
+    &:visited {
+        color: unset;
+    }
+}
+.btn {
+    padding: 1.2rem 2rem;
+    border-radius: $borderRadius;
+    color: $whiteColor;
+    background-color: $primaryColor;
+    border: 0;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    @include transition(transform);
+
+    &:hover {
+        transform: translateY(-1 * $translateDistance);
+        box-shadow: $boxShadow;
+    }
+}
+.col--2 {
+    width: 50%;
+}
+.col--3 {
+    width: calc(100% / 3);
+}
+.col--5 {
+    width: 20%;
+}
+.col--6 {
+    width: calc(100% / 6);
+}
+
+#app{
+    max-width: 1021px;
+    width: 100%;
+    margin: 0 auto;
 }
