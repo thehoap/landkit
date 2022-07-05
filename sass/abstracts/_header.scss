@@ -1,0 +1,176 @@
+.header {
+    @include flexSpaceBetween;
+    padding: 2rem;
+
+    &__btn.btn {
+        padding: 1rem 1.6rem;
+    }
+}
+
+.nav {
+    &-main {
+        @include flexSpaceBetween;
+
+        &__item {
+            position: relative;
+            padding: 0.8rem 2.4rem;
+            background-color: $whiteColor;
+            @include text(1.6rem, 500, $secondaryColor);
+            @include transition(color);
+            cursor: pointer;
+
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+    }
+
+    &-sub {
+        .nav-main__item:hover > & {
+            display: flex;
+        }
+        .nav-main__item:first-child:hover > & {
+            @include positionAbsolute(100%, null, null, -200%);
+        }
+        .nav-main__item:nth-child(2):hover > & {
+            @include positionAbsolute(100%, null, null, -300%);
+        }
+        .nav-main__item:nth-child(3):hover > &,
+        .nav-main__item:last-child:hover > & {
+            @include positionAbsolute(100%, null, null, -50%);
+        }
+        display: none;
+        width: fit-content;
+        border-radius: $borderRadius;
+        box-shadow: $boxShadow;
+        animation: floatUp 0.25s linear;
+
+        //Landings Menu
+        .nav-main__item--gradient & {
+            overflow: hidden;
+            &__item:first-child {
+                @include flexCenter;
+                background-image: linear-gradient(
+                        rgb(51, 94, 234, 0.8),
+                        rgb(51, 94, 234, 0.8)
+                    ),
+                    url("https://landkit.goodthemes.co/assets/img/photos/photo-3.jpg");
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                background-position: left top;
+                .nav-sub__heading {
+                    @include text(1.8rem, 600, $whiteColor);
+                    text-transform: unset;
+                }
+                .nav-sub__description {
+                    color: $whiteColor;
+                    margin-bottom: 16px;
+                }
+
+                .nav-sub__btn {
+                    margin-top: 4px;
+                    background-color: $whiteColor;
+                    color: $primaryColor;
+
+                    &:hover {
+                        transform: unset;
+                    }
+                }
+            }
+        }
+        //Account Menu
+        .nav-main__item--multi & {
+            flex-direction: column;
+            padding: 2rem 0;
+            &__item {
+                position: relative;
+                padding: 0 2rem;
+                & ul {
+                    display: none;
+                }
+                &:hover ul {
+                    display: block;
+                    @include positionAbsolute(-75%, null, null, 100%);
+                    width: 100%;
+                    background-color: $whiteColor;
+                    padding: 2rem;
+                    border-radius: $borderRadius;
+                    box-shadow: $boxShadow;
+                }
+            }
+
+            &__heading {
+                @include flexSpaceBetween;
+                @include text(1.6rem, 400, $secondaryColor);
+                gap: 12px;
+                text-transform: capitalize;
+                white-space: nowrap;
+            }
+        }
+
+        //Document Menu
+        .nav-main__item--iconic & {
+            flex-direction: column;
+
+            & svg {
+                width: 40px;
+            }
+
+            &__item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 16px;
+                padding: 2.4rem 0;
+                margin: 0 2.8rem;
+                border-bottom: 1px solid $greyColor;
+
+                &:last-child {
+                    border: 0;
+                }
+
+                span {
+                    @include text(1.125rem, 600, $primaryColor);
+                    background-color: $greyColor;
+                    padding: 4px 8px;
+                    border-radius: 12px;
+                    height: fit-content;
+                }
+            }
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 0;
+            right: 50%;
+            background-color: $whiteColor;
+            padding: 4rem;
+        }
+
+        &__heading {
+            @include text(1.2rem, 400, $primaryColor);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+        & ul {
+            margin-bottom: 1.2rem;
+        }
+        & ul li {
+            @include text(1.6rem, 400, $secondaryColor);
+            margin-bottom: 1rem;
+            white-space: nowrap;
+
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+
+        &__description {
+            @include text(1.6rem, 400, $secondaryColor);
+            white-space: nowrap;
+        }
+    }
+}
