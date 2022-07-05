@@ -1,7 +1,17 @@
 @font-face {
     font-family: "HKGroteskPro";
-    src: url("/font/HKGroteskPro-Regular.woff2") format("woff2"),
-        url("/font/HKGroteskPro-Medium.woff") format("woff2");
+    src: url("/assets/font/HKGroteskPro-Regular.woff2") format("woff2"),
+        url("/assets/font/HKGroteskPro-Medium.woff") format("woff2");
 }
-
 $fontFamily: "HKGroteskPro", serif;
+
+$primaryColor: #335eea;
+$secondaryColor: #506690;
+$whiteColor: #fff;
+$greyColor: #c6d3e6;
+
+$borderRadius: 6px;
+$translateDistance: 4px;
+
+$boxShadow: 0 1rem 2.5rem rgba(22, 28, 45, 0.1),
+    0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.1);
