@@ -1,0 +1,80 @@
+.card {
+    text-align: center;
+
+    &-services {
+        @include positionAbsolute(-75%);
+        border-radius: $borderRadius;
+        background-color: $whiteColor;
+
+        & > div {
+            padding: 4.8rem 3.2rem;
+        }
+
+        &__pricing {
+            margin-top: 3.6rem;
+            & span:first-child {
+                display: inline-block;
+                @include text(3.2rem, 400, $headingColor);
+                transform: translateY(-50%);
+            }
+            & span:nth-child(2) {
+                @include text(6rem, 400, $headingColor);
+            }
+            & span:nth-child(3) {
+                @include text(3.2rem, 400, $headingColor);
+            }
+            & p:last-child {
+                margin-top: 0.8rem;
+                @include text(1.6rem, 400, $textColor);
+            }
+        }
+
+        &__list {
+            padding: 2.4rem 6.4rem 0;
+        }
+        &__item {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2.4rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            & span {
+                @include text(1.6rem, 400, $headingColor);
+            }
+        }
+
+        & .btn {
+            display: block;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+    }
+
+    &-services--active {
+        & .btn {
+            &:hover {
+                transform: unset;
+                background-color: #2b50c7;
+            }
+        }
+    }
+    &-services--enable {
+        & div {
+            padding: 4.8em;
+        }
+
+        & .btn {
+            background-color: $greyColor;
+            color: $textColor;
+            &:hover {
+                transform: unset;
+            }
+        }
+
+        & .card-services__description {
+            margin: 10rem 0;
+            @include text(2rem, 400, $greyColor);
+        }
+    }
+}
