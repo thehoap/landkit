@@ -133,10 +133,19 @@ a {
         color: unset;
     }
 }
+textarea,
+button,
+input {
+    border: 0;
+    outline: 0;
+}
+
 .btn {
+    display: inline-block;
     padding: 1.2rem 2rem;
+    line-height: 2.8rem;
     border-radius: $borderRadius;
-    color: $whiteColor;
+    @include text(1.6rem, 600, $whiteColor);
     background-color: $primaryColor;
     border: 0;
     outline: none;
@@ -148,6 +157,14 @@ a {
         transform: translateY(-1 * $translateDistance);
         box-shadow: $boxShadow;
     }
+
+    &:visited{
+        color: $whiteColor;
+    }
+}
+
+.col--1 {
+    width: 100%;
 }
 .col--2 {
     width: 50%;
@@ -161,9 +178,58 @@ a {
 .col--6 {
     width: calc(100% / 6);
 }
-
-#app{
-    max-width: 1021px;
+.container {
+    width: 100%;
+}
+.header,
+.footer,
+.section {
+    max-width: 1040px;
     width: 100%;
     margin: 0 auto;
+}
+
+ion-icon {
+    font-size: 1.2rem;
+}
+
+.icon-check {
+    color: $greenColor;
+    padding: 0.25rem;
+    position: relative;
+    &:before {
+        content: "";
+        @include positionAbsolute(0, 0, 0, 0);
+        border-radius: 50%;
+        background-color: currentColor;
+        opacity: 0.2;
+    }
+}
+
+.badge {
+    @include text(1.2rem, 600, $primaryColor);
+    text-transform: uppercase;
+    background-color: $greyColor;
+    padding: 0.4rem 1.2rem;
+    border-radius: 12px;
+    height: fit-content;
+}
+
+.white-bg-color {
+    background-color: $whiteColor;
+}
+.light-grey-bg-color {
+    background-color: #fafcfd;
+}
+.grey-bg-color {
+    background-color: #f1f4f8;
+}
+.dark-bg-color {
+    background-color: #1b2a4e;
+}
+.pt-20{
+    padding-top: 20rem;
+}
+.pb-20{
+    padding-bottom: 20rem;
 }

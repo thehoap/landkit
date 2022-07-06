@@ -7,11 +7,14 @@ $fontFamily: "HKGroteskPro", serif;
 
 $primaryColor: #335eea;
 $secondaryColor: #506690;
+$textColor: #869ab8;
+$headingColor: #161c2d;
 $whiteColor: #fff;
 $greyColor: #c6d3e6;
+$greenColor: #42ba96;
 
 $borderRadius: 6px;
 $translateDistance: 4px;
 
-$boxShadow: 0 1rem 2.5rem rgba(22, 28, 45, 0.1),
-    0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.1);
+$boxShadow: 0 1rem 2.5rem rgba(22,28,45,.1),0 .5rem 1rem -.75rem rgba(22,28,45,.1);
+$boxShadowHover: 0 2rem 5rem rgba(22,28,45,.1),0 .5rem 1rem -.75rem rgba(22,28,45,.05);

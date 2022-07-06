@@ -1,0 +1,43 @@
+.form {
+    &-group {
+        width: 100%;
+    }
+    &-input {
+        width: 100%;
+        border-bottom: 1px solid $greyColor;
+        padding: 1.6rem 0;
+    }
+}
+
+.section {
+    //SECTION FORM
+    &__form-wrapper {
+        @include transition(transform);
+        border-radius: $borderRadius;
+        box-shadow: $boxShadow;
+        overflow: hidden;
+        
+        &:hover {
+            transform: translateY(-1 * $translateDistance);
+            box-shadow: $boxShadowHover;
+        }
+    }
+    &__form {
+        padding: 3.2rem;
+
+        & .form-group {
+            &__btn {
+                display: block;
+                background-color: $greenColor;
+                @include text(1.6rem, 600, $whiteColor);
+                margin-top: 3.2rem;
+                text-align: center;
+            }
+        }
+
+        &-img {
+            width: 100%;
+            border-radius: 0 0 500px 300%/50px;
+        }
+    }
+}
