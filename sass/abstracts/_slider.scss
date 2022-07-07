@@ -1,0 +1,75 @@
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+}
+.slider {
+    @include positionAbsolute(0, null, null, 0);
+    z-index: 1;
+    @include flexCenter;
+    max-width: 100%;
+    width: 100%;
+    background-color: $whiteColor;
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    user-select: none;
+
+    &-img-wrapper {
+        display: inline-block;
+        width: 100%;
+        border-radius: $borderRadius;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    &-img {
+        display: block;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 0% 100% 15% 85% / 100% 0% 100% 0%;
+        @include transition(display);
+    }
+
+    &-content {
+        padding: 4.8rem;
+        .section & svg {
+            color: #ff5a5f;
+            max-width: inherit;
+            height: 6rem;
+        }
+        &__message {
+            @include text(2rem, 400, $headingColor);
+            margin-top: 5.2rem;
+            margin-bottom: 4.4rem;
+        }
+        &__author {
+            @include text(1.2rem, 600, $textColor);
+            text-transform: uppercase;
+        }
+    }
+
+    &-direction {
+        &--previous {
+            @include positionAbsolute(50%, null, null, 0);
+            transform: translateX(-50%);
+        }
+        &--next {
+            @include positionAbsolute(50%, 0, null, null);
+            transform: translateX(50%);
+        }
+        z-index: 1;
+        @include flexCenter;
+        width: 5.6rem;
+        height: 5.6rem;
+        border-radius: 50%;
+        background-color: $primaryColor;
+        cursor: pointer;
+
+        &:active {
+            opacity: 0.6;
+        }
+
+        & ion-icon {
+            @include text(1.6rem, 400, $whiteColor);
+        }
+    }
+}
