@@ -1,0 +1,44 @@
+.toggle {
+    @include flexCenter;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+    
+    &__label {
+        @include text(1.7rem, 400, $textColor);
+    }
+
+    &-button {
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+    &-button:checked + &-label {
+        background-color: $primaryColor;
+        &:after {
+            @include positionAbsolute(0, 0, 0, calc(100% - 2rem));
+        }
+    }
+    &-label {
+        $height: 2rem;
+        $margin: 0.4rem;
+
+        position: relative;
+        width: 4rem;
+        height: $height;
+        background-color: $greyColor;
+        margin: 1rem;
+        border-radius: 1rem;
+        @include transition(background-color);
+
+        &:after {
+            content: "";
+            @include positionAbsolute(0, null, 0, 0);
+            width: calc($height - $margin);
+            height: calc($height - $margin);
+            margin: calc($margin / 2);
+            border-radius: 50%;
+            background-color: $whiteColor;
+            transition: right left 0.25s ease;
+        }
+    }
+}
