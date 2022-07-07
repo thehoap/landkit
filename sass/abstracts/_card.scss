@@ -2,7 +2,6 @@
     text-align: center;
 
     &-services {
-        @include positionAbsolute(-75%);
         border-radius: $borderRadius;
         background-color: $whiteColor;
 
@@ -25,6 +24,7 @@
             }
             & p:last-child {
                 margin-top: 0.8rem;
+                margin-bottom: 2.4rem;
                 @include text(1.6rem, 400, $textColor);
             }
         }
@@ -48,6 +48,7 @@
             display: block;
             border-top-left-radius: 0;
             border-top-right-radius: 0;
+            padding: 1.8rem 2.4rem;
         }
     }
 
@@ -61,7 +62,7 @@
     }
     &-services--enable {
         & div {
-            padding: 4.8em;
+            padding: 4.2rem;
         }
 
         & .btn {

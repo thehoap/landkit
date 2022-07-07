@@ -1,7 +1,7 @@
 @font-face {
     font-family: "HKGroteskPro";
-    src: url("assets/font/HKGroteskPro-Regular.woff2") format("woff2"),
-        url("assets/font/HKGroteskPro-Medium.woff") format("woff2");
+    src: url("../../assets/font/HKGroteskPro-Regular.woff2") format("woff2"),
+        url("../../assets/font/HKGroteskPro-Medium.woff2") format("woff2");
 }
 $fontFamily: "HKGroteskPro", serif;
 
@@ -18,3 +18,4 @@ $translateDistance: 4px;
 
 $boxShadow: 0 1rem 2.5rem rgba(22,28,45,.1),0 .5rem 1rem -.75rem rgba(22,28,45,.1);
 $boxShadowHover: 0 2rem 5rem rgba(22,28,45,.1),0 .5rem 1rem -.75rem rgba(22,28,45,.05);
+

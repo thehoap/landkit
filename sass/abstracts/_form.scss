@@ -16,7 +16,7 @@
         border-radius: $borderRadius;
         box-shadow: $boxShadow;
         overflow: hidden;
-        
+
         &:hover {
             transform: translateY(-1 * $translateDistance);
             box-shadow: $boxShadowHover;
@@ -24,7 +24,7 @@
     }
     &__form {
         padding: 3.2rem;
-
+        
         & .form-group {
             &__btn {
                 display: block;
@@ -33,8 +33,12 @@
                 margin-top: 3.2rem;
                 text-align: center;
             }
-        }
 
+            input {
+                background-color: transparent;
+            }
+        }
+        
         &-img {
             width: 100%;
             border-radius: 0 0 500px 300%/50px;

@@ -26,7 +26,13 @@
                     <nav class="nav">
                         <ul class="nav-main">
                             <li class="nav-main__item nav-main__item--gradient">
-                                Landings
+                                <div class="nav-main__item-heading">
+                                    Landings
+                                    <ion-icon
+                                        name="close-outline"
+                                        class="icon icon-close"
+                                    ></ion-icon>
+                                </div>
                                 <div class="nav-sub">
                                     <div class="nav-sub__item">
                                         <h3 class="nav-sub__heading">
@@ -71,7 +77,7 @@
                                 </div>
                             </li>
                             <li class="nav-main__item">
-                                Pages
+                                <div class="nav-main__item-heading">Pages</div>
                                 <div class="nav-sub">
                                     <ul class="nav-sub__item">
                                         <ul>
@@ -129,7 +135,9 @@
                                 </div>
                             </li>
                             <li class="nav-main__item nav-main__item--multi">
-                                Account
+                                <div class="nav-main__item-heading">
+                                    Account
+                                </div>
                                 <div class="nav-sub">
                                     <div class="nav-sub__item">
                                         <h3 class="nav-sub__heading">
@@ -205,7 +213,9 @@
                                 </div>
                             </li>
                             <li class="nav-main__item nav-main__item--iconic">
-                                Document
+                                <div class="nav-main__item-heading">
+                                    Document
+                                </div>
                                 <div class="nav-sub">
                                     <ul class="nav-sub__item">
                                         <svg
@@ -327,14 +337,16 @@
                             </li>
                         </ul>
                     </nav>
-                    <button class="header__btn btn btn--primary">
-                        Buy now
-                    </button>
+                    <a class="header__btn btn btn--primary"> Buy now </a>
+                    <ion-icon
+                        name="menu-outline"
+                        class="icon icon-menu"
+                    ></ion-icon>
                 </header>
             </div>
             <main class="main">
                 <div class="container white-bg-color">
-                    <section class="section">
+                    <section class="section gap-8">
                         <div class="col--2">
                             <h1 class="main__heading">
                                 Welcome to <span>Landkit</span>. <br />
@@ -356,7 +368,7 @@
                         </div>
                         <div class="col--2">
                             <img
-                                src="https://landkit.goodthemes.co/assets/img/illustrations/illustration-2.png"
+                                src="assets/images/illustrations/illustration-2.png"
                                 alt=""
                                 class="section__img"
                             />
@@ -452,7 +464,7 @@
                         </div>
                     </section>
                 </div>
-                <div class="container white-bg-color">
+                <div class="container white-bg-color border-top-bot">
                     <section class="section">
                         <div class="col--6">
                             <svg
@@ -529,48 +541,52 @@
                     </section>
                 </div>
                 <div class="container light-grey-bg-color">
-                    <section class="section">
-                        <div class="section__form-wrapper col--2">
-                            <img
-                                src="https://landkit.goodthemes.co/assets/img/photos/photo-2.jpg"
-                                alt=""
-                                class="section__form-img"
-                            />
-                            <form action="" class="section__form form">
-                                <div class="form-group">
-                                    <input
-                                        type="text"
-                                        class="form-input"
-                                        placeholder="Name"
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <input
-                                        type="email"
-                                        class="form-input"
-                                        placeholder="Email"
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <input
-                                        type="password"
-                                        class="form-input"
-                                        placeholder="Password"
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <a
-                                        href="#"
-                                        class="form-group__btn btn btn--primary"
-                                        >Download a sample</a
-                                    >
-                                </div>
-                            </form>
+                    <section class="section gap-8">
+                        <div class="col--2">
+                            <div class="section__form-wrapper">
+                                <img
+                                    src="assets/images/photos/photo-2.jpg"
+                                    alt=""
+                                    class="section__form-img"
+                                />
+                                <form action="" class="section__form form">
+                                    <div class="form-group">
+                                        <input
+                                            type="text"
+                                            class="form-input"
+                                            placeholder="Name"
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <input
+                                            type="email"
+                                            class="form-input"
+                                            placeholder="Email"
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <input
+                                            type="password"
+                                            class="form-input"
+                                            placeholder="Password"
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <a
+                                            href="#"
+                                            class="form-group__btn btn btn--primary"
+                                            >Download a sample</a
+                                        >
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                         <div class="col--2">
                             <h3 class="section__heading">
                                 The most useful resource
-                                <span>ever created for developers.</span>
+                                <span style="color: #42ba96"
+                                    >ever created for developers.</span
+                                >
                             </h3>
                             <p class="section__description">
                                 Using Landkit to build your site means never
@@ -621,6 +637,7 @@
                         <div class="col--2">
                             <h3 class="section__heading">
                                 We have lots of experience
+                                <br />
                                 <span>building Bootstrap themes</span>.
                             </h3>
                             <p class="section__description">
@@ -645,7 +662,7 @@
                                         ></path>
                                     </g>
                                 </svg>
-                                <div>
+                                <div class="section-list__content">
                                     <h4 class="section-list__heading">
                                         Bootstrap users since the beginning
                                     </h4>
@@ -693,14 +710,14 @@
 
                         <div class="col--2">
                             <img
-                                src="https://landkit.goodthemes.co/assets/img/screenshots/desktop/dashkit.jpg"
+                                src="assets/images/dashkit.jpg"
                                 alt=""
                                 class="section__img section__img--skew"
                             />
                         </div>
                     </section>
                 </div>
-                <div class="container light-grey-bg-color curve-grey-bg-bottom">
+                <div class="container light-grey-bg-color pt-20 pb-7">
                     <section class="section">
                         <div class="col--1">
                             <h3 class="section__heading">
@@ -712,13 +729,40 @@
                                 things folks have said about our themes over the
                                 years.
                             </p>
-                            <!-- SLIDER -->
-                            <div class="slider">SLIDER</div>
+                        </div>
+                    </section>
+                    <!-- SLIDER -->
+                    <section class="section section-slider">
+                        <div class="col--1">
+                            <div class="slider-wrapper">
+                                <div class="slider">
+                                    <div
+                                        class="slider-direction slider-direction--previous"
+                                    >
+                                        <ion-icon name="arrow-back"></ion-icon>
+                                    </div>
+                                    <div class="slider-img-wrapper">
+                                        <img src="" alt="" class="slider-img" />
+                                    </div>
+                                    <div class="slider-content">
+                                        <div class="slider-svg-wrapper"></div>
+                                        <p class="slider-content__message"></p>
+                                        <p class="slider-content__author"></p>
+                                    </div>
+                                    <div
+                                        class="slider-direction slider-direction--next"
+                                    >
+                                        <ion-icon
+                                            name="arrow-forward"
+                                        ></ion-icon>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </section>
                 </div>
-                <div class="container grey-bg-color">
-                    <section class="section">
+                <div class="container grey-bg-color curve-grey-bg-bottom">
+                    <section class="section pt-20">
                         <div class="col--2">
                             <h3 class="section__heading">
                                 Stay focused on your business.<br />
@@ -753,7 +797,7 @@
                         </div>
                         <div class="col--2">
                             <img
-                                src="https://landkit.goodthemes.co/assets/img/illustrations/illustration-8.png"
+                                src="assets/images/illustrations/illustration-8.png"
                                 alt=""
                                 class="section__img"
                             />
@@ -763,7 +807,9 @@
                 <div class="container grey-bg-color pb-20">
                     <section class="section">
                         <div class="col--1">
-                            <h3 class="section__heading">
+                            <h3
+                                class="section__heading section__heading--medium"
+                            >
                                 Fair, simple pricing for all.
                             </h3>
                             <p class="section__description">
@@ -780,13 +826,17 @@
                                     id="toggle-pricing"
                                     class="toggle-button"
                                 />
+                                <label
+                                    for="toggle-pricing"
+                                    class="toggle-label"
+                                ></label>
                                 <p class="toggle__label">Monthly</p>
                             </div>
                         </div>
                     </section>
                 </div>
                 <div class="container dark-bg-color curve-bg-top">
-                    <section class="section">
+                    <section class="section section--services">
                         <div class="col--2">
                             <div
                                 class="card card-services card-services--active"
@@ -870,12 +920,17 @@
                         </div>
                     </section>
                 </div>
-                <div class="container dark-bg-color pt-20">
+                <div class="container dark-bg-color pt-30">
                     <section class="section">
                         <section class="section-list">
                             <div class="col--2">
                                 <div class="section-list__item">
-                                    <p class="section-list__item-icon">?</p>
+                                    <div class="icon-question-wrapper">
+                                        <ion-icon
+                                            name="help-circle"
+                                            class="icon icon-question"
+                                        ></ion-icon>
+                                    </div>
                                     <div>
                                         <h3 class="section-list__item-heading">
                                             Can I use Landkit for my clients?
@@ -891,7 +946,12 @@
                                     </div>
                                 </div>
                                 <div class="section-list__item">
-                                    <p class="section-list__item-icon">?</p>
+                                    <div class="icon-question-wrapper">
+                                        <ion-icon
+                                            name="help-circle"
+                                            class="icon icon-question"
+                                        ></ion-icon>
+                                    </div>
                                     <div>
                                         <h3 class="section-list__item-heading">
                                             Do I get free updates?
@@ -909,7 +969,12 @@
                             </div>
                             <div class="col--2">
                                 <div class="section-list__item">
-                                    <p class="section-list__item-icon">?</p>
+                                    <div class="icon-question-wrapper">
+                                        <ion-icon
+                                            name="help-circle"
+                                            class="icon icon-question"
+                                        ></ion-icon>
+                                    </div>
                                     <div>
                                         <h3 class="section-list__item-heading">
                                             Is there a money back guarantee?
@@ -924,7 +989,12 @@
                                     </div>
                                 </div>
                                 <div class="section-list__item">
-                                    <p class="section-list__item-icon">?</p>
+                                    <div class="icon-question-wrapper">
+                                        <ion-icon
+                                            name="help-circle"
+                                            class="icon icon-question"
+                                        ></ion-icon>
+                                    </div>
                                     <div>
                                         <h3 class="section-list__item-heading">
                                             Does it work with Rails? React?
@@ -947,7 +1017,7 @@
                     </section>
                 </div>
                 <div class="container dark-bg-color curve-bg-bottom">
-                    <section class="section">
+                    <section class="section section--started">
                         <div class="col--1">
                             <span class="badge">Get started</span>
                             <h3
@@ -969,15 +1039,17 @@
                     </section>
                 </div>
             </main>
-            <div class="container grey-bg-color ">
+            <div class="container grey-bg-color">
                 <footer class="footer">
                     <div class="contact col--5">
                         <img
-                            src="https://landkit.goodthemes.co/assets/img/brand.svg"
+                            src="assets/images/brand.svg"
                             alt=""
                             class="contact__logo logo"
                         />
-                        <p class="contact__description">A better way to build.</p>
+                        <p class="contact__description">
+                            A better way to build.
+                        </p>
                         <section class="contact__media">
                             <a href="#!" class="contact__link">
                                 <ion-icon
@@ -1016,7 +1088,9 @@
                             <a href="#!" class="footer-list__link"> UI Kit </a>
                         </li>
                         <li class="footer-list__item">
-                            <a href="#!" class="footer-list__link"> Styleguide </a>
+                            <a href="#!" class="footer-list__link">
+                                Styleguide
+                            </a>
                         </li>
                         <li class="footer-list__item">
                             <a href="#!" class="footer-list__link">
@@ -1024,7 +1098,9 @@
                             </a>
                         </li>
                         <li class="footer-list__item">
-                            <a href="#!" class="footer-list__link"> Changelog </a>
+                            <a href="#!" class="footer-list__link">
+                                Changelog
+                            </a>
                         </li>
                     </ul>
                     <ul class="footer-list col--5">
@@ -1035,10 +1111,14 @@
                             </a>
                         </li>
                         <li class="footer-list__item">
-                            <a href="#!" class="footer-list__link"> Changelog </a>
+                            <a href="#!" class="footer-list__link">
+                                Changelog
+                            </a>
                         </li>
                         <li class="footer-list__item">
-                            <a href="#!" class="footer-list__link"> Pagebuilder </a>
+                            <a href="#!" class="footer-list__link">
+                                Pagebuilder
+                            </a>
                         </li>
                         <li class="footer-list__item">
                             <a href="#!" class="footer-list__link"> UI Kit </a>
@@ -1055,7 +1135,9 @@
                             <a href="#!" class="footer-list__link"> UI Kit </a>
                         </li>
                         <li class="footer-list__item">
-                            <a href="#!" class="footer-list__link"> Styleguide </a>
+                            <a href="#!" class="footer-list__link">
+                                Styleguide
+                            </a>
                         </li>
                         <li class="footer-list__item">
                             <a href="#!" class="footer-list__link">
@@ -1063,7 +1145,9 @@
                             </a>
                         </li>
                         <li class="footer-list__item">
-                            <a href="#!" class="footer-list__link"> Changelog </a>
+                            <a href="#!" class="footer-list__link">
+                                Changelog
+                            </a>
                         </li>
                         <li class="footer-list__item">
                             <a href="#!" class="footer-list__link">
@@ -1071,7 +1155,9 @@
                             </a>
                         </li>
                         <li class="footer-list__item">
-                            <a href="#!" class="footer-list__link"> Changelog </a>
+                            <a href="#!" class="footer-list__link">
+                                Changelog
+                            </a>
                         </li>
                     </ul>
                     <ul class="footer-list col--5">
@@ -1082,16 +1168,20 @@
                             </a>
                         </li>
                         <li class="footer-list__item">
-                            <a href="#!" class="footer-list__link"> Changelog </a>
+                            <a href="#!" class="footer-list__link">
+                                Changelog
+                            </a>
                         </li>
                         <li class="footer-list__item">
-                            <a href="#!" class="footer-list__link"> Pagebuilder </a>
+                            <a href="#!" class="footer-list__link">
+                                Pagebuilder
+                            </a>
                         </li>
                     </ul>
                 </footer>
             </div>
         </div>
-        <script src="app.js"></script>
+        <script type="module" src="./script/app.js"></script>
         <script
             type="module"
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

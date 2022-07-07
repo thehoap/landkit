@@ -5,6 +5,12 @@
     &__btn.btn {
         padding: 1rem 1.6rem;
     }
+
+    & ion-icon {
+        display: none;
+        @include text(4rem, 400, $textColor);
+        cursor: pointer;
+    }
 }
 
 .nav {
@@ -28,6 +34,10 @@
     &-sub {
         .nav-main__item:hover > & {
             display: flex;
+            width: fit-content;
+            border-radius: $borderRadius;
+            box-shadow: $boxShadow;
+            animation: floatUp 0.25s linear;
         }
         .nav-main__item:first-child:hover > & {
             @include positionAbsolute(100%, null, null, -200%);
@@ -40,10 +50,6 @@
             @include positionAbsolute(100%, null, null, -50%);
         }
         display: none;
-        width: fit-content;
-        border-radius: $borderRadius;
-        box-shadow: $boxShadow;
-        animation: floatUp 0.25s linear;
 
         //Landings Menu
         .nav-main__item--gradient & {

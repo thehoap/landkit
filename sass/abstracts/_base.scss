@@ -1,8 +1,16 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
-:root {
+html {
     font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 html,
 body,
@@ -139,7 +147,9 @@ input {
     border: 0;
     outline: 0;
 }
-
+p{
+    line-height: 1.6;
+}
 .btn {
     display: inline-block;
     padding: 1.2rem 2rem;
@@ -158,11 +168,88 @@ input {
         box-shadow: $boxShadow;
     }
 
-    &:visited{
+    &:visited {
         color: $whiteColor;
     }
 }
 
+.container {
+    width: 100%;
+}
+.header,
+.footer,
+.section {
+    max-width: min(calc(100% - 30px), 1040px);
+    width: 100%;
+    margin: 0 auto;
+}
+
+ion-icon {
+    font-size: 1.2rem;
+}
+
+
+.icon-check {
+    color: $greenColor;
+    padding: 0.25rem;
+    position: relative;
+    &:before {
+        content: "";
+        @include positionAbsolute(0, 0, 0, 0);
+        border-radius: 50%;
+        background-color: currentColor;
+        opacity: 0.2;
+    }
+}
+
+.icon-question-wrapper{
+    align-self: flex-start;
+    padding: 0;
+}
+.icon-question{
+    color: $greenColor;
+    font-size: 3.2rem;
+}
+
+.badge {
+    @include text(1.2rem, 600, $primaryColor);
+    text-transform: uppercase;
+    background-color: $greyColor;
+    padding: 0.4rem 1.2rem;
+    border-radius: 12px;
+    height: fit-content;
+}
+
+//BACKGROUND COLOR
+.white-bg-color {
+    background-color: $whiteColor;
+}
+.light-grey-bg-color {
+    background-color: #fafcfd;
+}
+.grey-bg-color {
+    background-color: #f1f4f8;
+}
+.dark-bg-color {
+    background-color: #1b2a4e;
+}
+//PADDING
+.pt-20 {
+    padding-top: 20rem;
+}
+.pt-25{
+    padding-top: 25rem;
+}
+.pt-30{
+    padding-top: 30rem;
+}
+.pb-7 {
+    padding-bottom: 7rem;
+}
+.pb-20 {
+    padding-bottom: 20rem;
+}
+//COLUMN
 .col--1 {
     width: 100%;
 }
@@ -178,58 +265,10 @@ input {
 .col--6 {
     width: calc(100% / 6);
 }
-.container {
-    width: 100%;
+.gap-8{
+    gap: 8rem;
 }
-.header,
-.footer,
-.section {
-    max-width: 1040px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-ion-icon {
-    font-size: 1.2rem;
-}
-
-.icon-check {
-    color: $greenColor;
-    padding: 0.25rem;
-    position: relative;
-    &:before {
-        content: "";
-        @include positionAbsolute(0, 0, 0, 0);
-        border-radius: 50%;
-        background-color: currentColor;
-        opacity: 0.2;
-    }
-}
-
-.badge {
-    @include text(1.2rem, 600, $primaryColor);
-    text-transform: uppercase;
-    background-color: $greyColor;
-    padding: 0.4rem 1.2rem;
-    border-radius: 12px;
-    height: fit-content;
-}
-
-.white-bg-color {
-    background-color: $whiteColor;
-}
-.light-grey-bg-color {
-    background-color: #fafcfd;
-}
-.grey-bg-color {
-    background-color: #f1f4f8;
-}
-.dark-bg-color {
-    background-color: #1b2a4e;
-}
-.pt-20{
-    padding-top: 20rem;
-}
-.pb-20{
-    padding-bottom: 20rem;
+.border-top-bot{
+    border-top: 1px solid #f3f5f9;
+    border-bottom: 1px solid #f3f5f9;
 }
