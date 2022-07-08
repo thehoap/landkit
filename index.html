@@ -346,7 +346,7 @@
             </div>
             <main class="main">
                 <div class="container white-bg-color">
-                    <section class="section gap-8">
+                    <section class="section gap-8 fly-up">
                         <div class="col--2">
                             <h1 class="main__heading">
                                 Welcome to <span>Landkit</span>. <br />
@@ -376,7 +376,7 @@
                     </section>
                 </div>
                 <div class="container white-bg-color">
-                    <section class="section">
+                    <section class="section fly-up">
                         <div class="section-list col--3">
                             <svg
                                 viewBox="0 0 24 24"
@@ -542,7 +542,7 @@
                 </div>
                 <div class="container light-grey-bg-color">
                     <section class="section gap-8">
-                        <div class="col--2">
+                        <div class="col--2 fly-left">
                             <div class="section__form-wrapper">
                                 <img
                                     src="assets/images/photos/photo-2.jpg"
@@ -554,22 +554,34 @@
                                         <input
                                             type="text"
                                             class="form-input"
-                                            placeholder="Name"
+                                            placeholder=" "
+                                            id="name"
                                         />
+                                        <label for="name" class="form-label"
+                                            >Name</label
+                                        >
                                     </div>
                                     <div class="form-group">
                                         <input
                                             type="email"
                                             class="form-input"
-                                            placeholder="Email"
+                                            placeholder=" "
+                                            id="email"
                                         />
+                                        <label for="email" class="form-label"
+                                            >Email</label
+                                        >
                                     </div>
                                     <div class="form-group">
                                         <input
                                             type="password"
                                             class="form-input"
-                                            placeholder="Password"
+                                            placeholder=" "
+                                            id="password"
                                         />
+                                        <label for="password" class="form-label"
+                                            >Password</label
+                                        >
                                     </div>
                                     <div class="form-group">
                                         <a
@@ -581,7 +593,7 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="col--2">
+                        <div class="col--2 fly-right">
                             <h3 class="section__heading">
                                 The most useful resource
                                 <span style="color: #42ba96"
@@ -634,7 +646,7 @@
                 </div>
                 <div class="container light-grey-bg-color">
                     <section class="section">
-                        <div class="col--2">
+                        <div class="col--2 fly-left">
                             <h3 class="section__heading">
                                 We have lots of experience
                                 <br />
@@ -708,7 +720,7 @@
                             </div>
                         </div>
 
-                        <div class="col--2">
+                        <div class="col--2 fly-right">
                             <img
                                 src="assets/images/dashkit.jpg"
                                 alt=""
@@ -822,12 +834,13 @@
                                 <p class="toggle__label">Annual</p>
                                 <input
                                     type="checkbox"
-                                    name="toggle-pricing"
-                                    id="toggle-pricing"
+                                    name="toggle-input-pricing"
+                                    id="toggle-input-pricing"
                                     class="toggle-button"
                                 />
                                 <label
-                                    for="toggle-pricing"
+                                    for="toggle-input-pricing"
+                                    id="toggle-label-pricing"
                                     class="toggle-label"
                                 ></label>
                                 <p class="toggle__label">Monthly</p>
@@ -837,7 +850,7 @@
                 </div>
                 <div class="container dark-bg-color curve-bg-top">
                     <section class="section section--services">
-                        <div class="col--2">
+                        <div class="col--2 fly-up">
                             <div
                                 class="card card-services card-services--active"
                             >
@@ -845,7 +858,12 @@
                                     <span class="badge">Standard</span>
                                     <div class="card-services__pricing">
                                         <span>$</span>
-                                        <span>29</span>
+                                        <span
+                                            id="label-pricing"
+                                            data-monthly="49"
+                                            data-annual="29"
+                                            >29</span
+                                        >
                                         <span>/mo</span>
                                         <p>per seat</p>
                                     </div>
@@ -900,7 +918,7 @@
                                 >
                             </div>
                         </div>
-                        <div class="col--2">
+                        <div class="col--2 fly-up">
                             <div
                                 class="card card-services card-services--enable"
                             >

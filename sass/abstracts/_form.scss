@@ -1,11 +1,31 @@
 .form {
     &-group {
         width: 100%;
+        position: relative;
     }
+
     &-input {
         width: 100%;
         border-bottom: 1px solid $greyColor;
-        padding: 1.6rem 0;
+        padding: 1.6rem 0 0.8rem;
+        margin-bottom: 1.2rem;
+        @include text(1.7rem, 400, $headingColor);
+
+        &:focus {
+            border-color: $primaryColor;
+        }
+    }
+
+    &-input:not(:placeholder-shown) + &-label,
+    &-input:focus + &-label {
+        @include positionAbsolute(0, null, null, 0);
+        @include transition(top);
+        font-size: 1.2rem;
+    }
+
+    &-label {
+        @include positionAbsolute(calc(50% - 1rem), null, null, 0);
+        @include text(1.7rem, 400, $textColor);
     }
 }
 
@@ -24,7 +44,7 @@
     }
     &__form {
         padding: 3.2rem;
-        
+
         & .form-group {
             &__btn {
                 display: block;
@@ -38,7 +58,7 @@
                 background-color: transparent;
             }
         }
-        
+
         &-img {
             width: 100%;
             border-radius: 0 0 500px 300%/50px;

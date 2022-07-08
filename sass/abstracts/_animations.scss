@@ -8,3 +8,30 @@
         transform: translateY(0);
     }
 }
+
+$animationDuration: 1s;
+$animationTimingFunc: ease;
+
+@mixin fly {
+    position: relative;
+    opacity: 0;
+    transition: transform $animationDuration $animationTimingFunc, opacity $animationDuration $animationTimingFunc;
+
+    &.active {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+.fly-up {
+    transform: translateY(50%);
+    @include fly;
+}
+.fly-left {
+    transform: translateX(-50%);
+    @include fly;
+}
+.fly-right {
+    transform: translateX(50%);
+    @include fly;
+}

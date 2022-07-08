@@ -39,6 +39,16 @@
     }
 
     &__btn {
+        & .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            & ion-icon {
+                font-size: 1.7rem;
+            }
+        }
+
         & .btn:last-child {
             background-color: $greyColor;
             @include text(1.6rem, null, $primaryColor);
@@ -126,7 +136,7 @@
             }
             
         }
-        
+
         &__content{
             display: flex;
             flex-direction: column;
