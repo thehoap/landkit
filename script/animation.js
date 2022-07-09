@@ -1,6 +1,6 @@
 const fly = document.querySelectorAll(".fly-up, .fly-left, .fly-right");
 const windowHeight = window.innerHeight;
-const flyPoint = 150;
+const flyPoint = 100;
 
 const activeFly = () => {
     for (let i = 0; i < fly.length; i++) {
