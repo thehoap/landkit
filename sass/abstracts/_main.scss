@@ -23,7 +23,7 @@
             color: $primaryColor;
         }
 
-        &--medium{
+        &--medium {
             font-size: 3.8rem;
         }
 
@@ -60,6 +60,10 @@
     &__img {
         width: 100%;
         border-radius: $borderRadius;
+
+        &--large {
+            width: 125%;
+        }
 
         &--skew {
             transform: rotateY(-35deg) rotateX(15deg);
@@ -134,16 +138,14 @@
             &-description {
                 @include text(1.6rem, 400, $textColor);
             }
-            
         }
 
-        &__content{
+        &__content {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 8px;
         }
-
     }
 
     //SECTION PRICING AND STARTED
@@ -236,4 +238,3 @@
         border-radius: 100% 0% 100% 0% / 0% 0% 100% 100%;
     }
 }
-
