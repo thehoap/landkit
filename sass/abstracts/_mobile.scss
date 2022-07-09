@@ -1,0 +1,124 @@
+@include mobile {
+    .section {
+        &.mb-col--1 {
+            flex-direction: column;
+
+            & .col--2 {
+                width: 100%;
+                padding: 0;
+            }
+
+            & .col--3 {
+                width: 100%;
+                padding: 0;
+                margin: 0 0 3.2rem;
+            }
+
+            &__img {
+                &--large {
+                    width: 100%;
+                }
+            }
+        }
+
+        &.mb-col--2 {
+            flex-wrap: wrap;
+
+            & .col--6 {
+                width: 50%;
+            }
+        }
+
+        &-list {
+            &.mb-col--1 {
+                flex-direction: column;
+                & .col--2 {
+                    width: 100%;
+                    padding: 0;
+
+                    &:last-child {
+                        margin-bottom: -2rem;
+                    }
+                }
+            }
+        }
+
+        &--services {
+            & .col--2 {
+                &:first-child {
+                    bottom: 100%;
+                }
+            }
+        }
+    }
+    .card {
+        &-services {
+            &__list {
+                padding: 0;
+            }
+            & .card-services__description {
+                margin: 4rem 0;
+            }
+            &--enable {
+                & div {
+                    padding: 2rem;
+                }
+            }
+        }
+    }
+    .slider {
+        flex-direction: column;
+
+        &-img-wrapper {
+            width: 100%;
+            border-radius: 0;
+        }
+        &-img {
+            border-radius: 0;
+        }
+
+        &-content {
+            &__message {
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+            &__author {
+                margin-bottom: 2rem;
+            }
+        }
+        &-direction {
+            top: 75%;
+        }
+    }
+
+    .footer {
+        &.mb-col--2 {
+            flex-wrap: wrap;
+            padding-left: 2rem;
+            padding-bottom: 0;
+
+            & .col--5 {
+                width: 50%;
+                display: inline;
+                margin-bottom: 3.2rem;
+
+                &:first-child {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .mb-flex-col-reverse {
+        &.mb-col--1 {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .mb-pb-40 {
+        padding-bottom: 40rem;
+    }
+    .mb-pt-50 {
+        padding-top: 50rem;
+    }
+}
