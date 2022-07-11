@@ -1,9 +1,5 @@
-@font-face {
-    font-family: "HKGroteskPro";
-    src: url("../../assets/font/HKGroteskPro-Regular.woff2") format("woff2"),
-        url("../../assets/font/HKGroteskPro-Medium.woff2") format("woff2");
-}
-$fontFamily: "HKGroteskPro", serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+$fontFamily: "Poppins", sans-serif;
 
 $primaryColor: #335eea;
 $secondaryColor: #506690;
