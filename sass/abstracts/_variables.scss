@@ -1,5 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-$fontFamily: "Poppins", sans-serif;
+@font-face {
+    font-family: "HKGroteskPro";
+    // src: url("../../assets/font/HKGroteskPro-Regular.woff2") format("woff2"),
+    //     url("../../assets/font/HKGroteskPro-Medium.woff2") format("woff2");
+    src: url("../../assets/font/HKGroteskPro-Regular.woff2"),
+        url("../../assets/font/HKGroteskPro-Medium.woff2");
+}
+$fontFamily: "HKGroteskPro", serif;
 
 $primaryColor: #335eea;
 $secondaryColor: #506690;
@@ -12,6 +18,7 @@ $greenColor: #42ba96;
 $borderRadius: 6px;
 $translateDistance: 4px;
 
-$boxShadow: 0 1rem 2.5rem rgba(22,28,45,.1),0 .5rem 1rem -.75rem rgba(22,28,45,.1);
-$boxShadowHover: 0 2rem 5rem rgba(22,28,45,.1),0 .5rem 1rem -.75rem rgba(22,28,45,.05);
-
+$boxShadow: 0 1rem 2.5rem rgba(22, 28, 45, 0.1),
+    0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.1);
+$boxShadowHover: 0 2rem 5rem rgba(22, 28, 45, 0.1),
+    0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.05);

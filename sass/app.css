@@ -1,6 +1,6 @@
 @font-face {
   font-family: "HKGroteskPro";
-  src: url("../../assets/font/HKGroteskPro-Regular.woff2") format("woff2"), url("../../assets/font/HKGroteskPro-Medium.woff2") format("woff2");
+  src: url("../../assets/font/HKGroteskPro-Regular.woff2"), url("../../assets/font/HKGroteskPro-Medium.woff2");
 }
 html {
   font-size: 62.5%;
