@@ -1237,6 +1237,14 @@ ion-icon {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .slider-content__message {
+    margin-top: 1.2rem;
+  }
+  .slider-direction {
+    top: 15rem;
+  }
+}
 @media only screen and (max-width: 480px) {
   .section.mb-col--1 {
     flex-direction: column;

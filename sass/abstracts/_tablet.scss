@@ -98,8 +98,8 @@
             &__item {
                 flex-grow: 1;
                 padding: 0;
-                
-                &.tb-col--2{
+
+                &.tb-col--2 {
                     width: 50%;
                 }
             }
@@ -135,6 +135,19 @@
     @include tablet {
         &__heading {
             font-size: 2.4rem;
+        }
+    }
+}
+
+@include tablet {
+    .slider {
+        &-content {
+            &__message {
+                margin-top: 1.2rem;
+            }
+        }
+        &-direction {
+            top: 15rem;
         }
     }
 }
